@@ -1,3 +1,4 @@
+import CustomButton from "../CustomButton";
 import DateBox from "./DateBox";
 import HikeInfo from "./HikeInfo";
 import ProfileAvatarGroup from "./ProfileAvatarGroup";
@@ -33,7 +34,7 @@ const InfoCard = ({
         <img
           src={imgUrl}
           alt={title}
-          className="w-full h-48 object-cover rounded-md"
+          className="w-full h-56 object-cover rounded-md"
         />
         <DateBox date={date} />
         <HikeInfo
@@ -49,7 +50,10 @@ const InfoCard = ({
       </div>
 
       <hr className="border-t border-zinc-500 mt-3" />
-      <ProfileAvatarGroup images={participants} size="sm" />
+      <div className="mt-3 flex items-center justify-between">
+        <ProfileAvatarGroup images={participants} size="sm" />
+        <CustomButton label="Join" />
+      </div>
     </div>
   );
 };
