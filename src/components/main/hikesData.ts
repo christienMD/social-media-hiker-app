@@ -10,6 +10,7 @@ const hikeData: InfoCardData[] = [
     location: "Lumajang, East Java",
     time: "THU 07:30 AM",
     imgUrl: "/images/mountain1.jpg",
+    participants: Array(5).fill("/images/mdprofile.jpg"),
   },
   {
     date: new Date(2023, 11, 28),
@@ -20,6 +21,7 @@ const hikeData: InfoCardData[] = [
     location: "Australia",
     time: "WED 10:00 AM",
     imgUrl: "/images/mountain2.jpg",
+    participants: Array(7).fill("/images/mdprofile.jpg"),
   },
   {
     date: new Date(2024, 0, 2),
@@ -30,6 +32,7 @@ const hikeData: InfoCardData[] = [
     location: "Tanzania",
     time: "FRI 8:30 AM",
     imgUrl: "/images/mountain3.jpg",
+    participants: Array(4).fill("/images/mdprofile.jpg"),
   },
   {
     date: new Date(2024, 0, 14),
@@ -40,6 +43,7 @@ const hikeData: InfoCardData[] = [
     location: "Andes, Peru",
     time: "MON 11:20 AM",
     imgUrl: "/images/mountain4.jpg",
+    participants: Array(10).fill("/images/mdprofile.jpg"),
   },
 ];
 

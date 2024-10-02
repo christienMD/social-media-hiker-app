@@ -1,5 +1,6 @@
 import DateBox from "./DateBox";
 import HikeInfo from "./HikeInfo";
+import ProfileAvatarGroup from "./ProfileAvatarGroup";
 
 type Difficulty = "Hard" | "Medium" | "Easy";
 
@@ -12,6 +13,7 @@ export interface InfoCardData {
   location: string;
   time: string;
   imgUrl: string;
+  participants: string[];
 }
 
 const InfoCard = ({
@@ -23,6 +25,7 @@ const InfoCard = ({
   title,
   location,
   imgUrl,
+  participants,
 }: InfoCardData) => {
   return (
     <div className="bg-social-bg rounded-md p-4 w-72 sm:w-80">
@@ -46,6 +49,7 @@ const InfoCard = ({
       </div>
 
       <hr className="border-t border-zinc-500 mt-3" />
+      <ProfileAvatarGroup images={participants} size="sm" />
     </div>
   );
 };

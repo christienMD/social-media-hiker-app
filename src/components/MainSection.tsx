@@ -20,6 +20,7 @@ const MainSection = ({ className }: { className: string }) => {
             title={hike.title}
             location={hike.location}
             time={hike.time}
+            participants={hike.participants}
           />
         ))}
       </div>
