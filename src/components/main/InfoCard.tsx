@@ -45,7 +45,7 @@ const InfoCard = ({
       </div>
       <p className="text-green-500 mt-3">{time}</p>
       <div className="mt-2">
-        <h2 className="text-xl font-semibold text-white">{title}</h2>
+        <h2 className="text-lg font-semibold text-white">{title}</h2>
         <p className="text-sm text-gray-500">{location}</p>
       </div>
 

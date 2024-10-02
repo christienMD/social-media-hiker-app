@@ -1,6 +1,6 @@
 import { LucideIcon } from "lucide-react";
 
-type Props = {
+interface Props {
   icon: LucideIcon;
   label: string;
   value?: number;
