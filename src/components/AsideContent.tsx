@@ -1,11 +1,21 @@
 import AsideLink from "./asideContent/AsideLink";
 import Comments from "./asideContent/Comments";
+import UserProfile from "./asideContent/UserProfile";
 import UserStats from "./asideContent/Userstats";
 import { Rss, Users, Mountain, Video, Image, Map } from "lucide-react";
 
 const AsideContent = ({ className }: { className: string }) => {
   return (
     <aside className={`p-7 ${className}`}>
+      {/* user profile */}
+      <div className="mt-3 mb-5">
+        <UserProfile
+          imagePath="/images/mdprofile.jpg"
+          name="Mesueh Christien"
+          username="mdchristien"
+        />
+      </div>
+
       {/* user stats */}
       <div className="bg-social-bg px-5 py-3 rounded-md">
         <UserStats />
@@ -21,8 +31,8 @@ const AsideContent = ({ className }: { className: string }) => {
         <AsideLink icon={Map} label="Map" />
 
         <hr className="border-t border-zinc-400 space-y-4" />
-      
-        <Comments className="mb-4"/>
+
+        <Comments className="mb-4" />
       </div>
     </aside>
   );
