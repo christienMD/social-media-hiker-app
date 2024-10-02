@@ -1,3 +1,5 @@
+import LinkDropdown from "./LinkDropdown";
+
 const NavLinks = () => {
   return (
     <div className="flex space-x-4 opacity-75 text-base">
@@ -10,6 +12,10 @@ const NavLinks = () => {
       <a href="#" className="text-white hover:text-social-yellow">
         My Network
       </a>
+
+      <div className="hidden lg:block">
+        <LinkDropdown label="Account" />
+      </div>
     </div>
   );
 };

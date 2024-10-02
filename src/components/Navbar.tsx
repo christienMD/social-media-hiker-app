@@ -12,8 +12,9 @@ import NavLinks from "./navbar/NavLinks";
 const Navbar = ({ className }: { className: string }) => {
   return (
     <nav
-      className={`h-16 w-full bg-social-bg flex items-center justify-evenly px-4 ${className}`}
+      className={`h-16 w-full bg-social-bg flex items-center justify-between px-4 ${className}`}
     >
+      {/* brand */}
       <div className="flex items-center gap-3">
         <IconBox
           icon={Edit}
@@ -26,15 +27,17 @@ const Navbar = ({ className }: { className: string }) => {
         <Search
           icon={SearchIcon}
           placeholder="Search"
-          className="w-64 lg:w-72"
+          className="w-64 md:w-60 lg:w-72 hidden sm:block"
           iconColor="text-gray-500"
         />
       </div>
 
+       {/* nav links */}
       <div className="hidden md:block">
         <NavLinks />
       </div>
 
+      {/* socials */}
       <div className="flex items-center space-x-4">
         <IconBox
           icon={MessageSquare}
