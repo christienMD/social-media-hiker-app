@@ -1,12 +1,19 @@
-import { Settings, MessageSquare, Bell, Edit } from "lucide-react";
+import {
+  Settings,
+  MessageSquare,
+  Bell,
+  Edit,
+  Search as SearchIcon,
+} from "lucide-react";
 import IconBox from "./navbar/IconBox";
+import Search from "./navbar/Search";
 
 const Navbar = ({ className }: { className: string }) => {
   return (
     <nav
       className={`h-16 w-full bg-social-bg flex items-center px-4 ${className}`}
     >
-      <div className="flex space-x-4 p-4">
+      <div className="flex space-x-4">
         <IconBox
           icon={Settings}
           iconColor="text-white"
@@ -32,6 +39,17 @@ const Navbar = ({ className }: { className: string }) => {
           hasNotification={false}
           className="cursor-pointer"
           variant="yellow"
+        />
+        <IconBox
+          avatarUrl="/images/mdprofile.jpg"
+          size="md"
+          className="cursor-pointer"
+        />
+        <Search
+          icon={SearchIcon}
+          placeholder="Search"
+          className="w-64 lg:w-72"
+          iconColor="text-gray-500"
         />
       </div>
     </nav>

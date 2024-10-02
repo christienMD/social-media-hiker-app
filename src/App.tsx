@@ -5,7 +5,7 @@ import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
-    <div className="bg-[#131415] min-h-screen text-white">
+    <div className="min-h-screen text-white">
       <div className="grid grid-cols-1 lg:grid-cols-[260px,1fr,1fr,1fr] grid-rows-[auto,1fr] min-h-screen">
         <Navbar className="col-span-full" />
         <Sidebar className="hidden lg:block" />

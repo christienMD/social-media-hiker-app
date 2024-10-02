@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 interface Props {
-  icon: LucideIcon;
+  icon?: LucideIcon;
   bgColor?: string;
   iconColor?: string;
   hasNotification?: boolean;
@@ -31,7 +31,7 @@ const IconBox = ({
 
   const variantClasses = {
     default: "hover:bg-[#131415]",
-    yellow: "hover:opacity-80",
+    yellow: "hover:opacity-75",
   };
 
   return (
@@ -56,9 +56,9 @@ const IconBox = ({
               {Icon && <Icon className={cn("w-1/2 h-1/2", iconColor)} />}
             </AvatarFallback>
           </Avatar>
-        ) : (
+        ) : Icon ? (
           <Icon className={cn("w-1/2 h-1/2", iconColor)} />
-        )}
+        ) : null}
       </div>
       {hasNotification && (
         <div className="absolute top-0 right-0 w-2 h-2 bg-red-500 rounded-full" />
