@@ -5,7 +5,7 @@ import {
   Edit,
   Search as SearchIcon,
 } from "lucide-react";
-import IconBox from "./navbar/IconBox";
+import IconBox from "./IconBox";
 import Search from "./navbar/Search";
 import NavLinks from "./navbar/NavLinks";
 
