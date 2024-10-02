@@ -7,6 +7,7 @@ export default {
   		colors: {
   			'social-bg': '#1F2124',
   			'social-bg-100': '#282A2D',
+        'social-yellow' : '#FED282',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
