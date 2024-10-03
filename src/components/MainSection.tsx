@@ -1,6 +1,7 @@
 import { hikeData } from "@/data";
 import InfoCard from "./main/InfoCard";
 import TopIntro from "./main/TopIntro";
+import AsideRight from "./AsideRight";
 
 
 const MainSection = ({ className }: { className: string }) => {
@@ -25,6 +26,11 @@ const MainSection = ({ className }: { className: string }) => {
             />
           </div>
         ))}
+
+        {/* AsideRight content */}
+        <div className="col-span-full sm:col-span-2 md:col-span-2">
+          <AsideRight className="grid sm:grid-cols-2 gap-6 xl:hidden" />
+        </div>
       </div>
     </main>
   );

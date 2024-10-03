@@ -8,7 +8,7 @@ const handleFollow = (userId: string) => {
 
 const AsideRight = ({ className }: { className?: string }) => {
   return (
-    <aside className={`mt-10 me-5 ${className}`}>
+    <aside className={`mt-10 ${className}`}>
       {/* user follow section */}
       <div className="space-y-4 bg-social-bg px-5 py-4 rounded-md">
         <h2 className="text-xl font-semibold mb-4">Who to follow</h2>
@@ -22,8 +22,8 @@ const AsideRight = ({ className }: { className?: string }) => {
         </div>
       </div>
 
-      {/* new section */}
-      <div className="mt-4 bg-social-bg px-3 py-4 rounded-md">
+      {/* news section */}
+      <div className="xl:mt-6 bg-social-bg px-3 rounded-md mb-6">
         <NewsCard news={newsFeeds} />
       </div>
     </aside>
