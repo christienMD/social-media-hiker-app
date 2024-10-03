@@ -2,8 +2,8 @@ import LinkDropdown from "../navbar/LinkDropdown";
 
 const TopIntro = () => {
   return (
-    <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mt-4 mb-6">
-      <h1 className="text-white capitalize text-2xl mb-2 sm:mb-0">
+    <div className="flex flex-col space-y-3 sm:flex-row items-start sm:items-center justify-between mt-4 mb-6">
+      <h1 className="text-white capitalize text-xl md:text-2xl mb-2 sm:mb-0">
         upcoming hikes
       </h1>
       <div className="flex items-center">

@@ -1,13 +1,12 @@
 import hikeData from "./main/hikesData";
 import InfoCard from "./main/InfoCard";
 import TopIntro from "./main/TopIntro";
-// import UserFollowCard from "./main/UserFollowCard";
-// import users from "./main/users";
+
 
 const MainSection = ({ className }: { className: string }) => {
   return (
-    <main className={`h-full p-4 ${className}`}>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+    <main className={`h-full p-4 ${className} mx-auto`}>
+      <div className="grid sm:grid-cols-2 md:grid-cols-2 gap-2 max-w-2xl mx-auto">
         <div className="col-span-full">
           <TopIntro />
         </div>

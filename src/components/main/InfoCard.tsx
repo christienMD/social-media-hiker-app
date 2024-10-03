@@ -29,7 +29,7 @@ const InfoCard = ({
   participants,
 }: InfoCardData) => {
   return (
-    <div className="bg-social-bg rounded-md p-4 w-72 sm:w-80">
+    <div className="bg-social-bg rounded-md p-4 w-80 sm:w-72 md:w-80">
       <div className="relative">
         <img
           src={imgUrl}
