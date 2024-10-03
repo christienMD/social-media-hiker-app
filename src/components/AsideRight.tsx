@@ -1,5 +1,6 @@
+import { newsFeeds, users } from "@/data";
 import UserFollowCard from "./main/UserFollowCard";
-import users from "./main/users";
+import NewsCard from "./asideContent/NewsCard";
 
 const handleFollow = (userId: string) => {
   console.log(`Following user with id: ${userId}`);
@@ -8,6 +9,7 @@ const handleFollow = (userId: string) => {
 const AsideRight = ({ className }: { className?: string }) => {
   return (
     <aside className={`mt-10 me-5 ${className}`}>
+      {/* user follow section */}
       <div className="space-y-4 bg-social-bg px-5 py-4 rounded-md">
         <h2 className="text-xl font-semibold mb-4">Who to follow</h2>
         {users.map((user) => (
@@ -18,6 +20,11 @@ const AsideRight = ({ className }: { className?: string }) => {
             View more
           </button>
         </div>
+      </div>
+
+      {/* new section */}
+      <div className="mt-4 bg-social-bg px-3 py-4 rounded-md">
+        <NewsCard news={newsFeeds} />
       </div>
     </aside>
   );

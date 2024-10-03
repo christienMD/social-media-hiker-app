@@ -1,6 +1,25 @@
-import { InfoCardData } from "./InfoCard";
+import { InfoCardData } from "./components/main/InfoCard";
 
-const hikeData: InfoCardData[] = [
+export const newsFeeds = [
+  {
+    imgUrl: "/images/news1.jpg",
+    description: "Five questions you should answer truthfully",
+    time: "2h",
+  },
+  {
+    imgUrl: "/images/news2.jpg",
+    description: "Ten unbelievable facts about mountains",
+    time: "2h",
+  },
+  {
+    imgUrl: "/images/news3.jpg",
+    description: "The best hiking trails for beginners",
+    time: "3h",
+  },
+];
+
+
+export const hikeData: InfoCardData[] = [
   {
     date: new Date(2023, 11, 24),
     distance: 106,
@@ -47,4 +66,36 @@ const hikeData: InfoCardData[] = [
   },
 ];
 
-export default hikeData;
+
+export const users = [
+  {
+    id: "1",
+    name: "Scarlett Floyd",
+    username: "floydlett",
+    imgUrl: "images/mdprofile.jpg",
+  },
+  {
+    id: "2",
+    name: "Rohan Mckenzie",
+    username: "rhanroken",
+    imgUrl: "images/mdprofile.jpg",
+  },
+  {
+    id: "3",
+    name: "Bibi Shelton",
+    username: "bibisi",
+    imgUrl: "images/mdprofile.jpg",
+  },
+  {
+    id: "4",
+    name: "Beatrice Cox",
+    username: "coxbea",
+    imgUrl: "images/mdprofile.jpg",
+  },
+  {
+    id: "5",
+    name: "Fletcher Morse",
+    username: "fletchama",
+    imgUrl: "images/mdprofile.jpg",
+  },
+];

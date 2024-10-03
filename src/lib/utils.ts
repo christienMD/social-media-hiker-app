@@ -26,3 +26,11 @@ export const formatDate = (date: Date): { month: string; day: string } => {
   };
 };
 
+export const formatTime = (time: string): string => {
+  const hours = parseInt(time);
+  if (isNaN(hours)) {
+    return time;
+  }
+  return hours === 1 ? "1 hour ago" : `${hours} hours ago`;
+};
+

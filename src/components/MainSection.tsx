@@ -1,4 +1,4 @@
-import hikeData from "./main/hikesData";
+import { hikeData } from "@/data";
 import InfoCard from "./main/InfoCard";
 import TopIntro from "./main/TopIntro";
 
