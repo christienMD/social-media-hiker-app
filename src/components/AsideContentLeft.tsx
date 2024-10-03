@@ -6,7 +6,7 @@ import { Rss, Users, Mountain, Video, Image, Map } from "lucide-react";
 
 const AsideContent = ({ className }: { className: string }) => {
   return (
-    <aside className={`p-7 ${className}`}>
+    <aside className={`p-7 ${className} mx-auto`}>
       {/* user profile */}
       <div className="mt-3 mb-5">
         <UserProfile
