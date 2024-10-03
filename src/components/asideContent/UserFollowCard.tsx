@@ -1,25 +1,26 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { User } from "@/entities";
+import CustomAvatar from "../CustomAvatar";
 
 interface Props {
-  user: {
-    id: string;
-    name: string;
-    username: string;
-    imgUrl: string;
-  };
+  user: User;
   onFollow: (userId: string) => void;
 }
 
 const UserFollowCard = ({ user }: Props) => {
-  const { name, username, imgUrl } = user;
+  const { name, username, imgUrl , onlineStatus} = user;
 
   return (
     <div className="flex items-center justify-between w-full">
       <div className="flex items-center space-x-3">
-        <Avatar className="w-8 h-8">
-          <AvatarImage src={imgUrl} alt={name} />
-          <AvatarFallback>{name}</AvatarFallback>
-        </Avatar>
+        {onlineStatus ? (
+          <CustomAvatar imagePath={imgUrl} size={32} />
+        ) : (
+          <Avatar className="w-8 h-8">
+            <AvatarImage src={imgUrl} alt={name} />
+            <AvatarFallback>{name}</AvatarFallback>
+          </Avatar>
+        )}
         <div className="flex flex-col">
           <span className="text-sm font-medium text-white">{name}</span>
           <span className="text-xs text-gray-400">@{username}</span>

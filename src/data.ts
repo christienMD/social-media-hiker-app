@@ -1,4 +1,5 @@
 import { InfoCardData } from "./components/main/InfoCard";
+import { User } from "./entities";
 
 export const newsFeeds = [
   {
@@ -67,35 +68,40 @@ export const hikeData: InfoCardData[] = [
 ];
 
 
-export const users = [
+export const users: User[] = [
   {
     id: "1",
     name: "Scarlett Floyd",
     username: "floydlett",
     imgUrl: "images/mdprofile.jpg",
+    onlineStatus: true,
   },
   {
     id: "2",
     name: "Rohan Mckenzie",
     username: "rhanroken",
     imgUrl: "images/mdprofile.jpg",
+    onlineStatus: false,
   },
   {
     id: "3",
     name: "Bibi Shelton",
     username: "bibisi",
     imgUrl: "images/mdprofile.jpg",
+    onlineStatus: true,
   },
   {
     id: "4",
     name: "Beatrice Cox",
     username: "coxbea",
     imgUrl: "images/mdprofile.jpg",
+    onlineStatus: false,
   },
   {
     id: "5",
     name: "Fletcher Morse",
     username: "fletchama",
     imgUrl: "images/mdprofile.jpg",
+    onlineStatus: true,
   },
 ];

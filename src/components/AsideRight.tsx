@@ -1,5 +1,5 @@
 import { newsFeeds, users } from "@/data";
-import UserFollowCard from "./main/UserFollowCard";
+import UserFollowCard from "./asideContent/UserFollowCard";
 import NewsCard from "./asideContent/NewsCard";
 
 const handleFollow = (userId: string) => {
@@ -23,7 +23,7 @@ const AsideRight = ({ className }: { className?: string }) => {
       </div>
 
       {/* news section */}
-      <div className="xl:mt-6 bg-social-bg px-3 rounded-md mb-6">
+      <div className="xl:mt-6 bg-social-bg px-3 rounded-md xl:mb-6">
         <NewsCard news={newsFeeds} />
       </div>
     </aside>
