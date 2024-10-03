@@ -1,33 +1,26 @@
+import { Hike } from "@/entities";
 import CustomButton from "../CustomButton";
 import DateBox from "./DateBox";
 import HikeInfo from "./HikeInfo";
 import ProfileAvatarGroup from "./ProfileAvatarGroup";
 
-type Difficulty = "Hard" | "Medium" | "Easy";
-
-export interface InfoCardData {
-  date: Date;
-  distance: number;
-  difficulty: Difficulty;
-  elevation: number;
-  title: string;
-  location: string;
-  time: string;
-  imgUrl: string;
-  participants: string[];
+export interface Props {
+  hike: Hike;
 }
 
 const InfoCard = ({
-  date,
-  difficulty,
-  distance,
-  elevation,
-  time,
-  title,
-  location,
-  imgUrl,
-  participants,
-}: InfoCardData) => {
+  hike: {
+    date,
+    difficulty,
+    distance,
+    elevation,
+    time,
+    title,
+    location,
+    imgUrl,
+    participants,
+  },
+}: Props) => {
   return (
     <div className="bg-social-bg rounded-md p-4 w-80 sm:w-72 md:w-80">
       <div className="relative">

@@ -3,7 +3,6 @@ import InfoCard from "./main/InfoCard";
 import TopIntro from "./main/TopIntro";
 import AsideRight from "./AsideRight";
 
-
 const MainSection = ({ className }: { className: string }) => {
   return (
     <main className={`h-full py-4 ${className} mx-auto`}>
@@ -13,17 +12,7 @@ const MainSection = ({ className }: { className: string }) => {
         </div>
         {hikeData.map((hike, index) => (
           <div key={index} className="col-span-1">
-            <InfoCard
-              date={hike.date}
-              difficulty={hike.difficulty}
-              distance={hike.distance}
-              elevation={hike.elevation}
-              imgUrl={hike.imgUrl}
-              title={hike.title}
-              location={hike.location}
-              time={hike.time}
-              participants={hike.participants}
-            />
+            <InfoCard hike={hike} />
           </div>
         ))}
 

@@ -1,5 +1,4 @@
-import { InfoCardData } from "./components/main/InfoCard";
-import { User } from "./entities";
+import { Hike, User } from "./entities";
 
 export const newsFeeds = [
   {
@@ -20,7 +19,7 @@ export const newsFeeds = [
 ];
 
 
-export const hikeData: InfoCardData[] = [
+export const hikeData: Hike[] = [
   {
     date: new Date(2023, 11, 24),
     distance: 106,
