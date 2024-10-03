@@ -11,9 +11,11 @@ const UserProfile = ({ imagePath, name, username }: Props) => {
   return (
     <div className="flex flex-col items-center">
       <CustomAvatar imagePath={imagePath} size={80} />
-      <div className="mt-2 flex items-center">
+      <div className="mt-2 flex gap-2 items-center">
         <span className="text-white font-semibold">{name}</span>
-        <Mountain className="ml-1 text-white w-3 h-3" />
+        <div className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-blue-500">
+          <Mountain className="text-white w-3 h-3" />
+        </div>
       </div>
       <span className="text-gray-300 text-sm">@{username}</span>
     </div>
